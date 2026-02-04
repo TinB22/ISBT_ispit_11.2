@@ -166,6 +166,6 @@ Realizirani projektni zadatak u potpunosti zadovoljava sve postavljene tehničke
 
 -   **Predmet:** Informacijska sigurnost i blockchain tehnologije
 
--   **Ustanova:** FIDIT
+-   **Ustanova:** FIDIT - Fakultet informatike i digitalnih tehnologija Rijeka
 
 -   **Autor:** Tin Barbarić
