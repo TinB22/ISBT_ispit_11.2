@@ -1,4 +1,4 @@
-Izvještaj o projektnom zadatku: Implementacija sustava tokena u Solidityju
+# Izvještaj o projektnom zadatku: Implementacija sustava tokena u Solidityju
 
 
 1\. Uvod
@@ -50,7 +50,6 @@ dok su deploy i interakcije automatizirane korištenjem razvojnog okvira Hardhat
 
 Tijekom demonstracije izvršene su sljedeće stvarne transakcije:
 
----
 
 #### Deploy pametnog ugovora
 
@@ -63,7 +62,6 @@ Tijekom demonstracije izvršene su sljedeće stvarne transakcije:
 
 Ovom transakcijom kreiran je ugovor te je početna količina tokena dodijeljena vlasniku.
 
----
 
 #### Mint transakcija (povećanje ponude)
 
@@ -82,7 +80,6 @@ Ovom transakcijom kreiran je ugovor te je početna količina tokena dodijeljena 
 
 Ovom operacijom potvrđeno je ispravno povećanje ukupne ponude tokena.
 
----
 
 #### Transfer transakcija (Owner → Addr1)
 
@@ -101,7 +98,6 @@ Ovom operacijom potvrđeno je ispravno povećanje ukupne ponude tokena.
 
 Transakcija potvrđuje ispravno ažuriranje stanja obje adrese.
 
----
 
 #### Burn transakcija (smanjenje ponude)
 
@@ -120,7 +116,6 @@ Transakcija potvrđuje ispravno ažuriranje stanja obje adrese.
 
 Ovom operacijom potvrđeno je ispravno smanjenje ukupne ponude tokena.
 
----
 
 Dobiveni rezultati jasno pokazuju da se sve funkcije pametnog ugovora izvršavaju očekivano te da se stanja računa i ukupna ponuda tokena ispravno ažuriraju nakon svake transakcije.
 
