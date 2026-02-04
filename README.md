@@ -50,8 +50,11 @@ npm install
 
 ### 3. Konfiguracija lokalne mreže
 Pokrenite **Ganache GUI** (Quickstart) i osigurajte da su postavke usklađene s RPC serverom:
-* **RPC Server:** `http://127.0.0.1:8545`
-* **Network ID:** `5777` (ili automatski)
+**RPC server:** http://127.0.0.1:8545  
+**Chain ID:** 1337
+
+Napomena: novije verzije Ganache koriste port 8545 i Chain ID 1337.
+Ako koristite stariju verziju, port može biti 7545 i Chain ID 5777.
 
 ### 4. Postavljanje okolišnih varijabli
 Kreirajte `.env` datoteku u korijenu projekta kako biste sigurno pohranili privatne ključeve. Kopirajte ključeve s Ganache sučelja:
