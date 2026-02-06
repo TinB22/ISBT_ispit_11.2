@@ -1,13 +1,11 @@
-Izvještaj o projektnom zadatku: Implementacija sustava tokena u Solidityju
-==========================================================================
+# Izvještaj o projektnom zadatku: Implementacija sustava tokena u Solidityju
+
 
 1\. Uvod
---------
 
 Projektni zadatak u sklopu kolegija Informacijska sigurnost i blockchain tehnologije obuhvaća razvoj i testiranje jednostavnog sustava tokena temeljenog na pametnom ugovoru. Primarni cilj bio je primijeniti teoretska znanja o blockchain tehnologiji kroz praktičnu izradu funkcionalnog rješenja u programskom jeziku Solidity. Sustav je dizajniran da simulira osnovne operacije digitalne imovine, uključujući inicijalizaciju ponude, prijenos vrijednosti između korisnika te upravljanje ukupnom količinom tokena u optjecaju.
 
 2\. Arhitektura i tehnološki okvir
-----------------------------------
 
 Tehničko rješenje temelji se na suvremenim alatima za razvoj decentraliziranih aplikacija. Za pisanje pametnog ugovora korišten je Solidity (verzija 0.8.x), dok je razvojni proces olakšan upotrebom razvojnog okvira Hardhat. Lokalna blockchain mreža Ganache poslužila je kao kontrolirano okruženje za izvršavanje transakcija, a interakcija s ugovorom ostvarena je putem ethers.js biblioteke.
 
@@ -20,9 +18,8 @@ Struktura projekta podijeljena je na tri ključna segmenta:
 -   **Test**: Sadrži skupove automatiziranih testova koji osiguravaju ispravnost koda prije produkcije.
 
 3\. Tehnička implementacija pametnog ugovora
---------------------------------------------
 
-Glavna komponenta sustava je ugovor pod nazivom **SimpleToken**. On definira logiku upravljanja stanjima računa korisnika putem varijabli stanja kao što su naziv tokena, simbol, broj decimala i ukupna zaliha. Stanja pojedinih adresa pohranjena su u privatnom mapiranju (mapping), čime se osigurava integritet podataka.
+Glavna komponenta sustava je ugovor pod nazivom **cToken**. On definira logiku upravljanja stanjima računa korisnika putem varijabli stanja kao što su naziv tokena, simbol, broj decimala i ukupna zaliha. Stanja pojedinih adresa pohranjena su u privatnom mapiranju (mapping), čime se osigurava integritet podataka.
 
 ### 3.1. Ključne funkcije i logika
 
@@ -31,7 +28,6 @@ Prilikom inicijalizacije ugovora koristi se konstruktor koji definira vlasnika (
 Funkcionalnost prijenosa ostvarena je metodom `transfer`, koja provjerava posjeduje li pošiljatelj dovoljan iznos tokena te osigurava da primatelj nije nulta adresa. Za upravljanje monetarnom politikom tokena implementirane su funkcije `mint` i `burn`. One omogućuju povećanje ili smanjenje ukupne ponude, ali su strogo zaštićene modifikatorom `onlyOwner`, što sprječava neovlaštene korisnike u manipulaciji zalihama.
 
 4\. Analiza rezultata i testiranje
-----------------------------------
 
 Ispravnost implementacije potvrđena je kroz dva procesa: ručnu demonstraciju na Ganache mreži i automatizirano testiranje. Tijekom testiranja na lokalnoj mreži, uspješno su izvršene transakcije između vlasnika i testnih adresa, što je dokumentirano pripadajućim hashovima transakcija i promjenama u stanjima računa.
 
@@ -54,7 +50,6 @@ dok su deploy i interakcije automatizirane korištenjem razvojnog okvira Hardhat
 
 Tijekom demonstracije izvršene su sljedeće stvarne transakcije:
 
----
 
 #### Deploy pametnog ugovora
 
@@ -67,7 +62,6 @@ Tijekom demonstracije izvršene su sljedeće stvarne transakcije:
 
 Ovom transakcijom kreiran je ugovor te je početna količina tokena dodijeljena vlasniku.
 
----
 
 #### Mint transakcija (povećanje ponude)
 
@@ -86,7 +80,6 @@ Ovom transakcijom kreiran je ugovor te je početna količina tokena dodijeljena 
 
 Ovom operacijom potvrđeno je ispravno povećanje ukupne ponude tokena.
 
----
 
 #### Transfer transakcija (Owner → Addr1)
 
@@ -105,7 +98,6 @@ Ovom operacijom potvrđeno je ispravno povećanje ukupne ponude tokena.
 
 Transakcija potvrđuje ispravno ažuriranje stanja obje adrese.
 
----
 
 #### Burn transakcija (smanjenje ponude)
 
@@ -124,7 +116,6 @@ Transakcija potvrđuje ispravno ažuriranje stanja obje adrese.
 
 Ovom operacijom potvrđeno je ispravno smanjenje ukupne ponude tokena.
 
----
 
 Dobiveni rezultati jasno pokazuju da se sve funkcije pametnog ugovora izvršavaju očekivano te da se stanja računa i ukupna ponuda tokena ispravno ažuriraju nakon svake transakcije.
 
@@ -156,7 +147,6 @@ U nastavku je prikazan screenshot stanja računa u MetaMask novčaniku:
 ![MetaMask stanje računa](./pics/metamask_balance.png)
 
 5\. Zaključak
--------------
 
 Realizirani projektni zadatak u potpunosti zadovoljava sve postavljene tehničke zahtjeve. Implementirani pametni ugovor uspješno demonstrira temeljne koncepte blockchain tehnologije, uključujući decentralizirano upravljanje stanjima, sigurnosne restrikcije pristupa i transparentnost transakcija. Postavljena arhitektura pruža čvrst temelj za daljnje nadogradnje, poput implementacije punog ERC-20 standarda ili integracije s web sučeljem.
 
@@ -166,6 +156,6 @@ Realizirani projektni zadatak u potpunosti zadovoljava sve postavljene tehničke
 
 -   **Predmet:** Informacijska sigurnost i blockchain tehnologije
 
--   **Ustanova:** FIDIT
+-   **Ustanova:** FIDIT - Fakultet informatike i digitalnih tehnologija Rijeka
 
 -   **Autor:** Tin Barbarić

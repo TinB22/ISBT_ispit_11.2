@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-contract SimpleToken {
+contract cToken {
     string public name;
     string public symbol;
     uint8 public decimals = 18;

@@ -5,7 +5,7 @@ async function main() {
 
   console.log("Deployer:", deployer.address);
 
-  const Token = await hre.ethers.getContractFactory("SimpleToken");
+  const Token = await hre.ethers.getContractFactory("cToken");
 
   const name = "TinToken";
   const symbol = "TTK";

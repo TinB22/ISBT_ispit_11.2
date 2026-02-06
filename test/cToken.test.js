@@ -1,12 +1,12 @@
 const { expect } = require("chai");
 const { ethers } = require("hardhat");
 
-describe("SimpleToken", function () {
+describe("cToken", function () {
   const ONE = 10n ** 18n;
 
   it("Stvaranje tokena: initialSupply ide owneru", async () => {
     const [owner] = await ethers.getSigners();
-    const Token = await ethers.getContractFactory("SimpleToken");
+    const Token = await ethers.getContractFactory("cToken");
 
     const initialSupply = 1000n * ONE;
     const token = await Token.deploy("TinToken", "TTK", initialSupply);
@@ -17,7 +17,7 @@ describe("SimpleToken", function () {
 
   it("Mint: samo owner može povećati totalSupply i svoj balance", async () => {
     const [owner, other] = await ethers.getSigners();
-    const Token = await ethers.getContractFactory("SimpleToken");
+    const Token = await ethers.getContractFactory("cToken");
 
     const token = await Token.deploy("TinToken", "TTK", 1000n * ONE);
 
@@ -30,7 +30,7 @@ describe("SimpleToken", function () {
 
   it("Burn: samo owner može smanjiti totalSupply i svoj balance", async () => {
     const [owner, other] = await ethers.getSigners();
-    const Token = await ethers.getContractFactory("SimpleToken");
+    const Token = await ethers.getContractFactory("cToken");
 
     const token = await Token.deploy("TinToken", "TTK", 1000n * ONE);
 
@@ -43,7 +43,7 @@ describe("SimpleToken", function () {
 
   it("Transfer: balans prije/poslije (owner -> addr1)", async () => {
     const [owner, addr1] = await ethers.getSigners();
-    const Token = await ethers.getContractFactory("SimpleToken");
+    const Token = await ethers.getContractFactory("cToken");
 
     const token = await Token.deploy("TinToken", "TTK", 1000n * ONE);
 

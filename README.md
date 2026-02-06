@@ -8,7 +8,7 @@ The project includes native support for JavaScript, Hardhat scripts, tasks, and 
 
 ---
 
-# SimpleToken – Solidity Smart Contract Project
+# cToken – Solidity Smart Contract Project
 
 ## Pregled projekta
 Ovaj projekt izrađen je u sklopu kolegija **Informacijska sigurnost i blockchain tehnologije**. Sustav implementira osnovni pametni ugovor za upravljanje tokenima razvijen u programskom jeziku Solidity. Razvojni ciklus obuhvaća pisanje koda, testiranje pomoću okvira Hardhat te implementaciju na lokalnu blockchain mrežu Ganache.
@@ -21,7 +21,7 @@ Ovaj projekt izrađen je u sklopu kolegija **Informacijska sigurnost i blockchai
 * **Smanjenje ponude (Burn)** – operacija ograničena isključivo na vlasnika ugovora.
 
 ## Struktura direktorija
-* `contracts/`: Izvorni kod pametnog ugovora (`SimpleToken.sol`).
+* `contracts/`: Izvorni kod pametnog ugovora (`cToken.sol`).
 * `scripts/`: Skripte za deploy na mrežu i demonstraciju rada funkcija.
 * `test/`: Automatizirani testovi za provjeru integriteta i sigurnosti.
 * `hardhat.config.js`: Konfiguracijske postavke za Hardhat okruženje.
