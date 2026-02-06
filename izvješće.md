@@ -19,7 +19,7 @@ Struktura projekta podijeljena je na tri ključna segmenta:
 
 3\. Tehnička implementacija pametnog ugovora
 
-Glavna komponenta sustava je ugovor pod nazivom **SimpleToken**. On definira logiku upravljanja stanjima računa korisnika putem varijabli stanja kao što su naziv tokena, simbol, broj decimala i ukupna zaliha. Stanja pojedinih adresa pohranjena su u privatnom mapiranju (mapping), čime se osigurava integritet podataka.
+Glavna komponenta sustava je ugovor pod nazivom **cToken**. On definira logiku upravljanja stanjima računa korisnika putem varijabli stanja kao što su naziv tokena, simbol, broj decimala i ukupna zaliha. Stanja pojedinih adresa pohranjena su u privatnom mapiranju (mapping), čime se osigurava integritet podataka.
 
 ### 3.1. Ključne funkcije i logika
 
