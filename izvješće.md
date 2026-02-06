@@ -7,7 +7,7 @@ Projektni zadatak u sklopu kolegija Informacijska sigurnost i blockchain tehnolo
 
 2\. Arhitektura i tehnološki okvir
 
-Tehničko rješenje temelji se na suvremenim alatima za razvoj decentraliziranih aplikacija. Za pisanje pametnog ugovora korišten je Solidity (verzija 0.8.x), dok je razvojni proces olakšan upotrebom razvojnog okvira Hardhat. Lokalna blockchain mreža Ganache poslužila je kao kontrolirano okruženje za izvršavanje transakcija, a interakcija s ugovorom ostvarena je putem ethers.js biblioteke.
+Tehničko rješenje temelji se na suvremenim alatima za razvoj decentraliziranih aplikacija. Za pisanje pametnog ugovora korišten je Solidity (verzija 0.8.20, malo novija verzija od one sa vježbi, zbog prilagodbe novijim tehnologijama koje sam koristio [MetaMask i Ganache]), dok je razvojni proces olakšan upotrebom razvojnog okvira Hardhat. Lokalna blockchain mreža Ganache poslužila je kao kontrolirano okruženje za izvršavanje transakcija, a interakcija s ugovorom ostvarena je putem ethers.js biblioteke.
 
 Struktura projekta podijeljena je na tri ključna segmenta:
 
@@ -148,7 +148,7 @@ U nastavku je prikazan screenshot stanja računa u MetaMask novčaniku:
 
 5\. Zaključak
 
-Realizirani projektni zadatak u potpunosti zadovoljava sve postavljene tehničke zahtjeve. Implementirani pametni ugovor uspješno demonstrira temeljne koncepte blockchain tehnologije, uključujući decentralizirano upravljanje stanjima, sigurnosne restrikcije pristupa i transparentnost transakcija. Postavljena arhitektura pruža čvrst temelj za daljnje nadogradnje, poput implementacije punog ERC-20 standarda ili integracije s web sučeljem.
+Implementirani pametni ugovor uspješno demonstrira temeljne koncepte blockchain tehnologije, uključujući decentralizirano upravljanje stanjima, sigurnosne restrikcije pristupa i transparentnost transakcija. Postavljena arhitektura pruža čvrst temelj za daljnje nadogradnje, poput implementacije punog ERC-20 standarda ili integracije s web sučeljem.
 
 * * * * *
 
