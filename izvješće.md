@@ -11,15 +11,15 @@ Tehničko rješenje temelji se na suvremenim alatima za razvoj decentraliziranih
 
 Struktura projekta podijeljena je na tri ključna segmenta:
 
--   **Contracts**: Sadrži izvorni kod pametnog ugovora.
+-   Contracts: Sadrži izvorni kod pametnog ugovora.
 
--   **Scripts**: Obuhvaća automatizirane skripte za postavljanje (deploy) ugovora na mrežu te demonstraciju njegovih funkcija.
+-   Scripts: Obuhvaća automatizirane skripte za postavljanje (deploy) ugovora na mrežu te demonstraciju njegovih funkcija.
 
--   **Test**: Sadrži skupove automatiziranih testova koji osiguravaju ispravnost koda prije produkcije.
+-   Test: Sadrži skupove automatiziranih testova koji osiguravaju ispravnost koda prije produkcije.
 
 3\. Tehnička implementacija pametnog ugovora
 
-Glavna komponenta sustava je ugovor pod nazivom **cToken**. On definira logiku upravljanja stanjima računa korisnika putem varijabli stanja kao što su naziv tokena, simbol, broj decimala i ukupna zaliha. Stanja pojedinih adresa pohranjena su u privatnom mapiranju (mapping), čime se osigurava integritet podataka.
+Glavna komponenta sustava je ugovor pod nazivom cToken. On definira logiku upravljanja stanjima računa korisnika putem varijabli stanja kao što su naziv tokena, simbol, broj decimala i ukupna zaliha. Stanja pojedinih adresa pohranjena su u privatnom mapiranju (mapping), čime se osigurava integritet podataka.
 
 ### 3.1. Ključne funkcije i logika
 
@@ -137,7 +137,7 @@ Tijekom testiranja korišten je MetaMask novčanik za upravljanje lokalnim raču
 
 Nakon izvršavanja svih transakcija (deploy, mint, transfer i burn), vidljivo je da stanje računa više nije točno 100 ETH, već nešto manje (npr. 99.996 ETH).
 
-Razlog tome je potrošnja **gas naknade** za svaku izvršenu transakciju.  
+Razlog tome je potrošnja gas naknade za svaku izvršenu transakciju.  
 Svaka operacija na blockchainu (deploy ugovora ili poziv funkcije) zahtijeva plaćanje naknade u ETH-u, koja se koristi za pokrivanje troškova obrade transakcije.
 
 Zbroj svih izvršenih transakcija rezultirao je malim smanjenjem početnog stanja, što je očekivano i predstavlja normalno ponašanje Ethereum mreže.
@@ -154,8 +154,8 @@ Implementirani pametni ugovor uspješno demonstrira temeljne koncepte blockchain
 
 **Podaci o radu:**
 
--   **Predmet:** Informacijska sigurnost i blockchain tehnologije
+-   Predmet: Informacijska sigurnost i blockchain tehnologije
 
--   **Ustanova:** FIDIT - Fakultet informatike i digitalnih tehnologija Rijeka
+-   Ustanova: FIDIT - Fakultet informatike i digitalnih tehnologija Rijeka
 
--   **Autor:** Tin Barbarić
+-   Autor: Tin Barbarić
